@@ -32,12 +32,14 @@ The key method is UpdateQuality(), which simulates a day passing. When passing a
 
 There are special item types with different behavior, such as the Aged Brie, Backstage passes and Sulfuras
 
-Aged Brie: SellIn decreases by 1, Quality increases by 1. Once SellIn value is below 0, Quality increases by 2, can't get higher than 50.
+Aged Brie: SellIn decreases by 1, Quality increases by 1. Once SellIn value is below 0, Quality increases by 2
 
 Backstage passes: SellIn decreases by 1, Quality changes depending on SellIn value 
 SellIn > 10: Quality increases by 1
 SellIn <= 10: Quality increases by 2
 SellIn <= 5: Quality increases by 3
-SellIn < 0: Quality becomes 0 (Quality can't get over 50)
+SellIn < 0: Quality becomes 0
 
-Sulfuras: values for both stay the same, no capped values
+Sulfuras: values for both stay the same
+
+Additonal Information: Quality can't get lower than 0 and can't get higher than 50, except for Sulfuras.

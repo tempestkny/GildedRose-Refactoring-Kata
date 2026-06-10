@@ -44,4 +44,14 @@ public class GildedRoseTest
         Assert.Equal(9, Items[0].SellIn);
         Assert.Equal(11, Items[0].Quality);
     }
+
+    [Fact]
+    public void AgedBrie_IncreasesQualitybyTwoAfterSellByDate()
+    {
+        IList<Item> Items = new List<Item> { new Item { Name = "Aged Brie", SellIn = 0, Quality = 10 } };
+        GildedRose app = new GildedRose(Items);
+        app.UpdateQuality();
+        Assert.Equal(-1, Items[0].SellIn);
+        Assert.Equal(12, Items[0].Quality);
+    }
 }

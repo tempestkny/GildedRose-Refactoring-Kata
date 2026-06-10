@@ -48,11 +48,12 @@ Additonal Information: Quality can't get lower than 0 and can't get higher than 
 
 - Regular items decrease SellIn and Quality value by 1 after each day.
 - Regular items Quality decreases by 2 after SellIn reaches value below 0.
-- Quality never decreases below 0
-- Quality never increases above 50
+- Quality never decreases below 0.
+- Quality never increases above 50.
 - Aged Brie increases Quality by 1 after each day.
 - Aged Brie increases Quality by 2 after SellIn reaches value below 0.
 - Backstage passes Quality increases by 1 when more than 10 days are left.
 - Backstage passes Quality increases by 2 when 10 or less days are left.
 - Backstage passes Quality increases by 3 when 5 or less days are left.
+- Backstage passes Quality become 0 when SellIn reaches value below 0.
 - Sulfuras values never change.
